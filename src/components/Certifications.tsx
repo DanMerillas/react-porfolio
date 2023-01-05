@@ -10,16 +10,19 @@ return (<section id="certifications">
         </h1>
         <div className="flex flex-wrap m-4">
           {testimonials.map((testimonial) => (
-            <div className="p-4 md:w-1/2 w-full">
+            <div key={testimonial.name} className="p-4 md:w-1/2 w-full">
               <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
                 <p className="leading-relaxed mb-6">{testimonial.quote}</p>
                 <div className="inline-flex items-center">
-                  <img
+                  
+                  <span className="flex-grow flex flex-col pl-4">
+                  <span className="title-font font-medium text-white">
+                    <img
                     alt="testimonial"
                     src={testimonial.image}
-                    className="w-20 flex-shrink-0 object-cover object-center bg-slate-100"
+                    className="w-20 flex-shrink-0 object-cover object-center bg-slate-100 testimonialImg"
                   />
-                  <span className="flex-grow flex flex-col pl-4">
+                  </span>
                     <span className="title-font font-medium text-white">
                       {testimonial.name}
                     </span>

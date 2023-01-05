@@ -21,3 +21,22 @@ code {
   width: 200px;
 
 }
+
+section{
+  min-height: 525px;
+}
+
+.testimonialImg{
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.cajas{
+  border: white 1px solid;
+}
+
+.imgProject{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

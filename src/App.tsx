@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
@@ -15,15 +16,21 @@ function App() {
   return (
     <main className="text-gray-400 bg-gray-900 body-font">
 
-      <Navbar />
-      <div className="container mx-auto flex px-10 pt-10 md:flex-row flex-col items-center">
+      <div className="container mx-auto flex md:flex-row flex-col items-center">
       <img alt='Daniel Merillas' src={yo} className={'imgYo'}/>
       </div>
-      <About />
-       <Projects />
-      <Skills />
-      <Certifications />
-     <Contact /> 
+      
+      <BrowserRouter>
+      <Routes>
+      <Route key={'nav'} path="/" element={<Navbar />}>
+          <Route key={'about'} index  element={<About />}></Route>
+          <Route key={'projects'} path="/projects" element={<Projects />}></Route>
+          <Route key={'skills'} path="/skills" element={<Skills />} />
+          <Route key={'certifications'} path="/certifications" element={<Certifications />} />
+          <Route key={'contact'} path="/contact" element={<Contact />} />
+          </Route>
+      </Routes>
+    </BrowserRouter>
     </main>
   );
 }

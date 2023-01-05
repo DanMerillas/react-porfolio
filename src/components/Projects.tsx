@@ -12,21 +12,18 @@ export default function Projects() {
                 Aplicaciones que he construido
               </h1>
               <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-                facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-                fuga dolore.
+                He realizado proyectos de todos los tipos y tecnologias.
               </p>
             </div>
             <div className="flex flex-wrap -m-4">
               {projects.map((project) => (
-                <a
-                  href={project.link}
+                <span
                   key={project.image}
                   className="sm:w-1/2 w-100 p-4">
                   <div className="flex relative">
                     <img
                       alt="gallery"
-                      className="absolute inset-0 w-full h-full object-cover object-center"
+                      className="absolute inset-0 w-full h-full object-cover object-center imgProject"
                       src={project.image}
                     />
                     <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
@@ -39,7 +36,7 @@ export default function Projects() {
                       <p className="leading-relaxed">{project.description}</p>
                     </div>
                   </div>
-                </a>
+                </span>
               ))}
             </div>
           </div>
