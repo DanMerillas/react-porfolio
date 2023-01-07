@@ -14,6 +14,7 @@ export default function Projects() {
               <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
                 He realizado proyectos de todos los tipos y tecnologias.
               </p>
+              <p className="text-white">* Pon el cursor sobre las imagenes o haz click en ellas</p>
             </div>
             <div className="flex flex-wrap -m-4">
               {projects.map((project) => (
