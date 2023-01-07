@@ -1,5 +1,4 @@
 
-import { SocialIcon } from 'react-social-icons';
 
 export default function Contact() {
     return (
@@ -49,7 +48,7 @@ export default function Contact() {
                     </h2>
                     <br />
                     <p className="leading-relaxed mb-5">
-                        Si te interesa mi trabajo o piensas que puedo ayudarte a mejorar en algunas de las tecnologías que utilizo, no te cortes!! Escribeme y será un placer intentar ayudarte!!
+                        Si te interesa mi trabajo o piensas que puedo ayudarte a mejorar en algunas de las tecnologías que utilizo, no te cortes!! Escríbeme y será un placer intentar ayudarte!!
                     </p>
                     <div className="relative mb-4">
 
@@ -60,20 +59,11 @@ export default function Contact() {
                     <div className="relative mb-4">
 
                     </div>
-                    
-                    
-                    <div className="relative mt-7  grid grid-rows-1 grid-flow-col gap-4">
-                        <div className=''><SocialIcon url="https://linkedin.com/in/daniel-merillas-667b6a1a" bgColor="#FFFAFA" /></div>
-                        <div className=''><SocialIcon url="https://github.com/DanMerillas" bgColor="#FFFAFA" /></div>
-                        <div className=''><SocialIcon url="mailto:daniel.merillas@gmailcom" bgColor="#FFFAFA" /></div>
-                        <div className=''><SocialIcon url="https://www.example.com" label="Our portfolio" bgColor="#FFFAFA" /></div>
-
-                    </div>
-
-
 
                 </div>
             </div>
+
+            
         </section>
     );
 }

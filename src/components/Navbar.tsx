@@ -1,37 +1,45 @@
 
-import { Link,Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import { useState } from 'react'
+import NavbarItem from './NavbarItem'
+
+
+
 
 export default function Navbar() {
-    return (
-        <header className="bg-gray-800 md:sticky top-0 z-10">
-          
-          <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            
-            <div className="title-font font-medium text-white mb-4 md:mb-0">
-              <Link to="/" className="ml-3 text-xl">
-                Daniel Merillas
-              </Link>
-            </div>
-            <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-              <Link to="/projects" className="mr-5 hover:text-white">
-                Mis proyectos
-              </Link>
-              <Link to="/skills" className="mr-5 hover:text-white">
-                Habilidades
-              </Link>
-              <Link to="/certifications" className="mr-5 hover:text-white">
-                Certificaciones
-              </Link>
-            </nav>
-            <Link
-              to="/contact"
-              className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
-              ¡Contáctame!
-              {/* <ArrowRightIcon className="w-4 h-4 ml-1" /> */}
-            </Link>
-          </div>
 
-          <Outlet />
-        </header>
-      );
+  const [activeItem, setactiveItem] = useState<number>(1);
+  
+
+  return (
+    <header className="bg-gray-800 md:sticky top-0 z-10">
+      <nav>
+        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+
+          <div className="title-font font-medium text-base mb-4 md:mb-0">
+            <span onClick={() => setactiveItem(1)} className={activeItem === 1 ? "active" : ""}>
+              <NavbarItem textItem="Acerca de mi" toLink="/" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
+            </span>
+          </div>
+          <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
+            <span onClick={() => setactiveItem(2)} className={activeItem === 2 ? "active" : ""}>
+              <NavbarItem textItem="Mis proyectos" toLink="/projects" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
+            </span>
+            <span onClick={() => setactiveItem(3)} className={activeItem === 3 ? "active" : ""}>
+              <NavbarItem textItem="Habilidades" toLink="/skills" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
+            </span>
+            <span onClick={() => setactiveItem(4)} className={activeItem === 4 ? "active" : ""}>
+              <NavbarItem textItem="Certificaciones" toLink="/certifications" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
+            </span>
+          </nav>
+          <span onClick={() => setactiveItem(5)} className={activeItem === 5 ? "active" : ""}>
+            <NavbarItem textItem="¡Contáctame!" toLink="/contact" itemClassName="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0" />
+          </span>
+
+        </div>
+
+        <Outlet />
+      </nav>
+    </header>
+  );
 }

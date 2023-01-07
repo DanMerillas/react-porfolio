@@ -11,8 +11,8 @@ export default function Skills() {
                 Habilidades y Tecnologías
               </h1>
               <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-                Tengo facilidad para aprender cosas nuevas y todo lo que me suponga un reto me gusta!! <br/>
-                Me encanta relacionarme con los compañeros y el buen rollo y la colaboración es la base de mi vida.
+                Tengo facilidad para aprender cosas nuevas y me encantan los nuevos retos!! <br/>
+                Soy una persona muy sociable, trato de mantener siempre un buen ambiente de trabajo con compañeros y clientes y la colaboración es la base de mi vida.
               </p>
             </div>
             <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
