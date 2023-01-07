@@ -11,10 +11,8 @@ export default function Projects() {
               <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
                 Aplicaciones que he construido
               </h1>
-              <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                He realizado proyectos de todo tipo y tecnologías.
-              </p>
-              <p className="text-white">* Pon el cursor sobre las imagenes o haz click en ellas</p>
+              
+              <p className="text-white">* Pon el cursor sobre las imagenes o haz click en ellas y descubre la description del tipo de proyecto</p>
             </div>
             <div className="flex flex-wrap -m-4">
               {projects.map((project) => (

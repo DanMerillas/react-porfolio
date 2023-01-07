@@ -22,8 +22,8 @@ function App() {
           <div className="rounded flex pr-9 h-full">
             <img alt='Daniel Merillas' src={yo} className={'imgYo'} />
           </div>
-          <div className="rounded flex pl-9 h-full items-center">
-            <label className='title-font sm:text-4xl text-3xl mt-4 text-white' title='Daniel Merillas'><strong>Daniel Merillas</strong></label>
+          <div className="rounded flex pl-9 h-full items-center tituloPag">
+            <label className='title-font sm:text-4xl text-3xl mt-4 text-white' title='Daniel Merillas'><strong>Daniel Merillas Gonzalo</strong></label>
           </div>
 
         </div>
