@@ -3,13 +3,17 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Certifications from "./components/Certifications";
 import yo from './yo.png'
 
+
 import './App.css';
+import ProjectsTimeline from './components/ProjectsTimeline';
+import Technologies from './components/Technologies';
+
+
 
 function App() {
 
@@ -33,7 +37,8 @@ function App() {
         <Routes>
           <Route key={'nav'} path="/" element={<Navbar />}>
             <Route key={'about'} path="/" element={<About />}></Route>
-            <Route key={'projects'} path="/projects" element={<Projects />}></Route>
+            <Route key={'technologies'} path="/technologies" element={<Technologies />}></Route>
+            <Route key={'projects'} path="/projects" element={<ProjectsTimeline />}></Route>
             <Route key={'skills'} path="/skills" element={<Skills />} />
             <Route key={'certifications'} path="/certifications" element={<Certifications />} />
             <Route key={'contact'} path="/contact" element={<Contact />} />
