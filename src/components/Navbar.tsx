@@ -16,12 +16,11 @@ export default function Navbar() {
       <nav>
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
 
-          <div className="title-font font-medium text-base mb-4 md:mb-0">
-            <span onClick={() => setactiveItem(1)} className={`mt-1 ${activeItem === 1 ? "active" : ""}`}>
+          
+          <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 flex flex-wrap items-center text-base justify-center">
+          <span onClick={() => setactiveItem(1)} className={`mt-1 ${activeItem === 1 ? "active" : ""}`}>
               <NavbarItem textItem="Acerca de mi" toLink="/" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
             </span>
-          </div>
-          <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
             <span onClick={() => setactiveItem(2)} className={`mt-1 ${activeItem === 2 ? "active" : ""}`}>
               <NavbarItem textItem="Tecnologias" toLink="/technologies" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
             </span>
