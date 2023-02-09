@@ -25,17 +25,17 @@ export default function Navbar() {
             <span onClick={() => setactiveItem(2)} className={activeItem === 2 ? "active" : ""}>
               <NavbarItem textItem="Tecnologias" toLink="/technologies" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
             </span>
-            <span onClick={() => setactiveItem(3)} className={activeItem === 2 ? "active" : ""}>
+            <span onClick={() => setactiveItem(3)} className={activeItem === 3 ? "active" : ""}>
               <NavbarItem textItem="Proyectos" toLink="/projects" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
             </span>
-            <span onClick={() => setactiveItem(5)} className={activeItem === 3 ? "active" : ""}>
+            <span onClick={() => setactiveItem(4)} className={activeItem === 4 ? "active" : ""}>
               <NavbarItem textItem="Habilidades" toLink="/skills" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
             </span>
-            <span onClick={() => setactiveItem(5)} className={activeItem === 4 ? "active" : ""}>
+            <span onClick={() => setactiveItem(5)} className={activeItem === 5 ? "active" : ""}>
               <NavbarItem textItem="Certificaciones" toLink="/certifications" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
             </span>
           </nav>
-          <span onClick={() => setactiveItem(6)} className={activeItem === 5 ? "active" : ""}>
+          <span onClick={() => setactiveItem(6)} className={activeItem === 6 ? "active" : ""}>
             <NavbarItem textItem="¡Contáctame!" toLink="/contact" itemClassName="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0" />
           </span>
 

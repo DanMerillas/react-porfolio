@@ -20,13 +20,13 @@ export const TechnologiesList = [{
   {
     title: "SharePoint online",
     subtitle: "Sitios clásicos y modernos",
-    description: "Personalización de sitios clásicos (master pages, layouts, javascript/jquery, html/css. Desarrollo sobre sitios modernos con SPfx (React/Typescript). Creación de apps para teams",
+    description: "Personalización de sitios clásicos (master pages, layouts, javascript/jquery, html/css. Desarrollo sobre sitios modernos con SPfx (React/Typescript). Creación de apps para teams, azure functions, power automate, etc.",
     image: online,
   },
   {
     title: "Despliegues personalizados",
     subtitle: "Powershell",
-    description: "Uso de powershell y pnp powershell para la implementación de las soluciones en los distintos tipos de entornos. En onpremise puedo realizar la instalación de SharePoint y manejo el IIS con soltura",
+    description: "Uso de powershell y pnp powershell para la implementación de las soluciones en los distintos tipos de entornos. En on-premise puedo realizar la instalación de SharePoint y conozco las configuraciones principales del IIS",
     image: powershell,
   },
 ];
@@ -362,23 +362,8 @@ export const projectsList = [
     }
   },
   {
-    client: 'Departemento de Seguridad Nacional',
-    title: 'Foro de accionistas',
-    position: 'Arquitecto',
-    text: 'Solución para la gestión de escenarios de maniobras, emergencias ,etc. Integración de visores GIS y creación automatizada de escenarios',
-    date: '2015',
-    category: {
-      tag: 'INDRA',
-      color: '#018f69'
-    },
-    link: {
-      url: 'https://www.dsn.gob.es/',
-      text: 'Ver cliente'
-    }
-  },
-  {
-    client: 'Departemento de Seguridad Nacional',
-    title: 'Foro de accionistas',
+    client: 'Seguridad Nacional',
+    title: 'Gestión de escenarios',
     position: 'Arquitecto',
     text: 'Solución para la gestión de escenarios de maniobras, emergencias ,etc. Integración de visores GIS y creación automatizada de escenarios',
     date: '2015',
@@ -402,7 +387,284 @@ export const projectsList = [
       color: '#018f69'
     },
     link: {
-      url: 'https://www.dsn.gob.es/',
+      url: 'https://www.indracompany.com/',
+      text: 'Ver cliente'
+    }
+  },
+  {
+    client: 'Indra',
+    title: 'Intranet',
+    position: 'Programador Senior',
+    text: 'Responsable técnico, dentro del proyecto de transformación global de Indra bajo la plataforma SharePoint 2013 del módulo de Red Profesional como elemento fundamental en la mejora de la productividad. Coordinación con el resto de iniciativas de Intranet',
+    date: '2013 - 2014',
+    category: {
+      tag: 'INDRA',
+      color: '#018f69'
+    },
+    link: {
+      url: 'https://www.indracompany.com/',
+      text: 'Ver cliente'
+    }
+  },
+  {
+    client: 'TELECOM',
+    title: 'Migracion portal Telecom Italia',
+    position: 'Programador Senior',
+    text: 'Migración de la intranet de Telecom italia de un entorno sharepoint 2010 a 2013 migrando el resto de aplicaciones enlazadas en la intranet a asp.net',
+    date: '2013 - 2014',
+    category: {
+      tag: 'INDRA',
+      color: '#018f69'
+    }
+  },
+  {
+    client: 'INVERSIS',
+    title: 'Intranet',
+    position: 'Programador',
+    text: 'Definición de un nuevo modelo de Intranet para INVERSIS basado en enfoques Enterprise 2.0. Implantación de primera maqueta productiva de la Intranet sobre plataforma SharePoint 2013',
+    date: '2013 - 2014',
+    category: {
+      tag: 'INDRA',
+      color: '#018f69'
+    },
+    link: {
+      url: 'https://www.inversis.com/',
+      text: 'Ver cliente'
+    }
+  },
+  {
+    client: 'Universidad Pontificia Comillas',
+    title: 'Intranet',
+    position: 'Programador',
+    text: 'Desarrollo e implantación de la Intranet Corporativa U.P. Comillas',
+    date: '2012 - 2013',
+    category: {
+      tag: 'INDRA',
+      color: '#018f69'
+    },
+    link: {
+      url: 'https://www.comillas.edu/',
+      text: 'Ver cliente'
+    }
+  },
+  {
+    client: 'Ministerio de Defensa',
+    title: 'Gestión de Proyectos (POC)',
+    position: 'Programador',
+    text: 'POC para la gestión de proyectos en el Ministerio de  Defensa. Grupos de proyecto, Timeline de actividad y gestión documental',
+    date: '2012',
+    category: {
+      tag: 'INDRA',
+      color: '#018f69'
+    },
+    link: {
+      url: 'https://www.defensa.gob.es/',
+      text: 'Ver cliente'
+    }
+  },
+  {
+    client: 'BANKIA',
+    title: 'Sistema de Gestión de Proyectos',
+    position: 'Programador',
+    text: 'Implantación de una solución de gestión de proyectos corporativos que de soporte a la gestión de proyectos. Creación programatica de documento mpp en base a XML',
+    date: '2011',
+    category: {
+      tag: 'INDRA',
+      color: '#018f69'
+    },
+    link: {
+      url: 'https://www.caixabank.es/',
+      text: 'Ver cliente'
+    }
+  },
+  {
+    client: 'Enel',
+    title: 'Sistema de Gestión de Proyectos / Documental',
+    position: 'Programador',
+    text: 'Implantación de una solución de gestión de proyectos corporativos integrada al ERP corporativo (Navision, SAP) que de soporte a la gestión de proyectos y documental de la división de Tecnología e Ingeniería de Gas Natural',
+    date: '2011',
+    category: {
+      tag: 'INDRA',
+      color: '#018f69'
+    },
+    link: {
+      url: 'https://naturgytarifas.es/',
+      text: 'Ver cliente'
+    }
+  },
+  {
+    client: 'ENDESA',
+    title: 'Endesa.com',
+    position: 'Programador',
+    text: 'Implantación de la web publica Endesa.com en plataforma Sharepoint 2007, integración con sistemas externos',
+    date: '2011',
+    category: {
+      tag: 'INDRA',
+      color: '#018f69'
+    },
+    link: {
+      url: 'https://Endesa.com/',
+      text: 'Ver cliente'
+    }
+  },
+  {
+    client: 'SIEMENS',
+    title: 'MADAM',
+    position: 'Programador',
+    text: 'Aplicativo para la gestión de proovedores, participación internacional. Uso de tecnología Entity Framework y LINQ',
+    date: '2010',
+    category: {
+      tag: 'VASS',
+      color: '#0000FF'
+    },
+    link: {
+      url: 'https://new.siemens.com/',
+      text: 'Ver cliente'
+    }
+  },
+  {
+    client: 'YELL',
+    title: 'Web Builder',
+    position: 'Programador',
+    text: 'Implantación de una capa de acceso a datos utilizando Enterprise Library e integración con Oracle 9.0',
+    date: '2010',
+    category: {
+      tag: 'VASS',
+      color: '#0000FF'
+    },
+    link: {
+      url: 'https://www.paginasamarillas.es/',
+      text: 'Ver cliente'
+    }
+  },
+  {
+    client: 'ISBAN',
+    title: 'Secreatría',
+    position: 'Programador',
+    text: 'Proyecto para la automatización de procesamiento de correo utilizando las capacidades de Sharepoint. Add in de Outlook para integrar con la plataforma',
+    date: '2010',
+    category: {
+      tag: 'VASS',
+      color: '#0000FF'
+    },
+    link: {
+      url: 'https://www.linkedin.com/company/isban/?originalSubdomain=es',
+      text: 'Ver cliente'
+    }
+  },
+  {
+    client: 'FEDIT',
+    title: 'Fedit.com',
+    position: 'Programador',
+    text: 'Proyecto para la automatización de procesamiento de correo utilizando las capacidades de Sharepoint. Add in de Outlook para integrar con la plataforma',
+    date: '2009 - 2010',
+    category: {
+      tag: 'VASS',
+      color: '#0000FF'
+    },
+    link: {
+      url: 'https://fedit.com/',
+      text: 'Ver cliente'
+    }
+  },
+  {
+    client: 'TECHNOSITE',
+    title: 'Consorci de serveis Socials de Barcelona',
+    position: 'Programador',
+    text: 'Implanteción de la web publica para el Consorci de serveis Socials de Barcelona con tecnología Sharepoint 2007',
+    date: '2009',
+    category: {
+      tag: 'VASS',
+      color: '#0000FF'
+    },
+    link: {
+      url: 'https://tecnoaccesible.net/directorio/technosite',
+      text: 'Ver cliente'
+    }
+  },
+  {
+    client: 'SIEMENS',
+    title: 'Intranet',
+    position: 'Programador',
+    text: 'Soporte para los usuario en el uso de la nueva intranet. Resolución de incidencia y ejecución de mejoras',
+    date: '2009',
+    category: {
+      tag: 'VASS',
+      color: '#0000FF'
+    },
+    link: {
+      url: 'https://new.siemens.com/',
+      text: 'Ver cliente'
+    }
+  },
+  {
+    client: 'TERRA',
+    title: 'Invertia',
+    position: 'Programador',
+    text: 'Entorno Tecnológico: ASP 2.0 Consultoría para la mejora de la web de inversiones de Terra',
+    date: '2008 - 2009',
+    category: {
+      tag: 'VASS',
+      color: '#0000FF'
+    },
+    link: {
+      url: 'https://www.terra.com/',
+      text: 'Ver cliente'
+    }
+  },
+  {
+    client: 'IBERWORLD',
+    title: 'Intranet Prosegur Activa',
+    position: 'Programador Junior',
+    text: 'Migración de la intranet de Iberworld de las versiones de sharepoint 2003 a 2007',
+    date: '2008',
+    category: {
+      tag: 'VASS',
+      color: '#0000FF'
+    },
+  },
+  {
+    client: 'PROSEGUR',
+    title: 'Intranet Prosegur Activa',
+    position: 'Programador Junior',
+    text: 'Instalación, configuración y personalización del producto. Formación sobre plataformas Sharepoint 2007',
+    date: '2007 - 2008',
+    category: {
+      tag: 'VASS',
+      color: '#0000FF'
+    },
+    link: {
+      url: 'https://new.siemens.com/',
+      text: 'Ver cliente'
+    }
+  },
+  {
+    client: 'VASS',
+    title: 'VASSDESK',
+    position: 'Programador Junior',
+    text: 'Instalación, configuración y personalización del producto. Aplicación CMMI para la gestión de proyecto de VASS',
+    date: '2007',
+    category: {
+      tag: 'VASS',
+      color: '#0000FF'
+    },
+    link: {
+      url: 'https://vasscompany.com/',
+      text: 'Ver cliente'
+    }
+  },
+  {
+    client: 'TERRA',
+    title: 'Manteniento',
+    position: 'Programador Junior',
+    text: 'Creación de un entorno “laboratorio” para el desarrollo de mejoras sobre la aplicación de Terra. Mantenimiento de la actual herramienta e implementación de mejoras',
+    date: '2007',
+    category: {
+      tag: 'VASS',
+      color: '#0000FF'
+    },
+    link: {
+      url: 'https://www.terra.com/',
       text: 'Ver cliente'
     }
   },
