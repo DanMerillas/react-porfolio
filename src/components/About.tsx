@@ -9,13 +9,13 @@ export default function About() {
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
                 <p className='mb-4 typed-out'>Hola, soy Dani.</p>
-                <p className="title-font sm:text-xl text-xl mb-4 text-white">Me encanta programar!! 💻</p>
+                
               </h1>
               <p className="mb-8 leading-relaxed">
-              Soy un enamorado de la programación y de la tecnología. Empece en entornos onpremise y desarrollo backend, pero poco a poco estoy evolucionando hacia la nube. <br/>
-              Ahora programo tanto backend (Azure functions, demomios, web apis, etc) como frontend (spfx y react en general). <br/>
-              Me manejo con Sql y Oracle y, de vez en cuando, hago mis pruebas con Python para temas de automatización.
-              </p>
+              Soy un enamorado de la programación y de la tecnología. Empece en entornos onpremise y desarrollo backend, pero con los años he evolucionando hacia la nube.<br/>
+              Ahora programo tanto backend (Azure functions, demomios, web apis, etc.) como frontend (javascript, spfx y react). <br/>
+              Me manejo con Sql y Oracle y, de vez en cuando, hago mis pruebas con Python para temas de automatización de procesos y procesamiento de imagenes.
+              </p><br></br>
               <div className="flex justify-center">
                 <Link
                   to="/contact"
