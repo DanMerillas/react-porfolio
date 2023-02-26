@@ -1,9 +1,9 @@
-import foto1 from '../src/MCSD App Builder-logo-Blk.png'
-import foto2 from '../src/MCSA WebApps-logo-Blk.png'
-import c from '../src/csharp.png'
-import onpremise from '../src/SPOnPremise.png'
-import online from '../src/Sharepoint_online.png'
-import powershell from '../src/pnp.png'
+import foto1 from '../../src/MCSD App Builder-logo-Blk.png'
+import foto2 from '../../src/MCSA WebApps-logo-Blk.png'
+import c from '../../src/csharp.png'
+import onpremise from '../../src/SPOnPremise.png'
+import online from '../../src/Sharepoint_online.png'
+import powershell from '../../src/pnp.png'
 
 export const TechnologiesList = [{
     title: "c#",

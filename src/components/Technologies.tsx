@@ -1,6 +1,6 @@
 
 
-import { TechnologiesList } from "../data"
+import { TechnologiesList } from "../Data/data"
 
 export default function Technologies() {
     return (

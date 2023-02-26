@@ -1,4 +1,4 @@
-import { projectsList } from "../data"
+import { projectsList } from "../Data/data"
 import ProjectItem from "./ProjectItem"
 
 export default function ProjectsTimeline () {

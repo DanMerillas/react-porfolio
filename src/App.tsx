@@ -12,6 +12,7 @@ import yo from './yo.png'
 import './App.css';
 import ProjectsTimeline from './components/ProjectsTimeline';
 import Technologies from './components/Technologies';
+import Chatbot from './components/Chatbot';
 
 
 
@@ -42,6 +43,7 @@ function App() {
             <Route key={'skills'} path="/skills" element={<Skills />} />
             <Route key={'certifications'} path="/certifications" element={<Certifications />} />
             <Route key={'contact'} path="/contact" element={<Contact />} />
+            <Route key={'chat'} path="/chat" element={<Chatbot />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -1,6 +1,6 @@
 
 
-import { testimonials } from "../data";
+import { testimonials } from "../Data/data";
 
 export default function Certifications() {
 return (<section id="certifications">
