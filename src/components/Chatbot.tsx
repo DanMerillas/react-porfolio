@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { EXAMPLES, ANSWERS, IA_ENDPOINT,AUTH_IA } from "../Data/ChatData";
+import {  IA_ENDPOINT,AUTH_IA, readIAExamples, ANSWERS } from "../Data/ChatData";
 
 
 type Message = {
@@ -10,9 +10,11 @@ type Message = {
 }
 
 export default function Chatbot() {
-
+  
   const [prompttext, setprompttext] = useState("");
   const [loading, setloading] = useState(false);
+  const [examples, setexamples] = useState<any>({});
+
   const [messages, setmessages] = useState<Message[]>([{ id: String(Date.now()), type: "bot", text: 'Hola, soy el chatbot de Dani. ¿En que puedo ayudarte?' }]);
   const container = useRef<HTMLDivElement>(null)
 
@@ -22,7 +24,9 @@ export default function Chatbot() {
     }
   }, [messages])
 
-
+  useEffect(() => {
+    readIAExamples().then((result)=>setexamples(result))
+  }, [])
 
   function handlerSumbmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -45,7 +49,7 @@ export default function Chatbot() {
         {
           model: "large",
           inputs: [prompttext],
-          examples: EXAMPLES
+          examples: examples
 
         }),
 
