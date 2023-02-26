@@ -25,7 +25,7 @@ export const ANSWERS = {
       >Contanto</Link> o puedes hablar conmigo por linkedIn (Enlace en el pie de la página)</p>
     ),
     Salario: (
-      <p>Por supuesto, un aspecto importante a la hora de plantearse un cambio laboral, es el salario pero no es el único en lo que me fijo. Contactame y podremos concretar eso y otros aspectos de la oferta que puedan ser de interés</p>
+      <p>Por supuesto, un aspecto importante a la hora de plantearme un cambio laboral, es el salario pero no es el único en lo que me fijo. Contactame y podremos concretar eso y otros aspectos de la oferta que puedan ser de interés (Teletrabajo, formación, beneficios sociales, etc)</p>
     ),
     Cambio: (
       <p>No estoy en busqueda activa, pero nunca me cierro a nuevas metas laborales u oportunidades que puedan ser interesantes a nivel profesional o personal</p>
