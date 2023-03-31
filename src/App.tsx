@@ -17,7 +17,6 @@ import Chatbot from './components/Chatbot';
 
 
 function App() {
-console.log(process.env)
 
 
   return (

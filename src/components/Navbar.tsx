@@ -34,7 +34,7 @@ export default function Navbar() {
               <NavbarItem textItem="Certificaciones" toLink="/certifications" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
             </span>
             <span onClick={() => setactiveItem(6)} className={`mt-1 ${activeItem === 6 ? "active" : ""}`}>
-              <NavbarItem textItem="Chat" toLink="/chat" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
+              <NavbarItem textItem="Chat (Beta)" toLink="/chat" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
             </span>
             <span onClick={() => setactiveItem(7)} className={`mt-1 ${activeItem === 7 ? "active" : ""}`}>
             <NavbarItem textItem="¡Contáctame!" toLink="/contact" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />

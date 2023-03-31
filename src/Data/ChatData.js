@@ -38,6 +38,6 @@ export const ANSWERS = {
   IA: (<p>Soy una IA programada por Daniel Merillas</p>),
   Habilidades: (<p>Para ver las habilidades en programación de Dani puede acceder a la sección <Link className = "font-medium text-blue-600 dark:text-blue-800 hover:underline"
   to = "/skills">Habilidades</Link></p>),
-  unkown: ( <p>Lo siento, no te entendi.Intenta preguntar otra cosa y disculpa las molestias</p>
+  unkown: ( <p>Lo siento, no te entendí. Intenta preguntar otra cosa y disculpa las molestias. Esta funcionalidad esta todavia en Beta</p>
   )
 }
