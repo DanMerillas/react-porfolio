@@ -59,7 +59,7 @@ export default function Chatbot() {
       if (res.status !== 400) {
         const r = await res.json()
 
-        const resp = r.classifications[0].confidence > 0.7 ? (ANSWERS[r.classifications[0].prediction as keyof typeof ANSWERS] || ANSWERS['unkown']) : ANSWERS['unkown']
+        const resp = r.classifications[0].confidence > 0.8 ? (ANSWERS[r.classifications[0].prediction as keyof typeof ANSWERS] || ANSWERS['unkown']) : ANSWERS['unkown']
 
         setmessages((messages: any) => {
           return [...messages, { id: String(Date.now()), type: "bot", text: resp }]
