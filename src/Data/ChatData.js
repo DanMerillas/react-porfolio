@@ -13,8 +13,8 @@ export const IA_ENDPOINT = 'https://api.cohere.ai/classify'
 
 
 export async function readIAExamples() {
-  const DB_KEY = process.env.DB_AP_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind1dWh6eWdyZ3FmamptZmlqcXpyIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzc0NDMwNTAsImV4cCI6MTk5MzAxOTA1MH0.C89f_MQdIJn42HQNN9kO8ed_JJpHEr260vArr3pw_yA"
-  const DB_URL = process.env.DB_AP_URL || "https://wuuhzygrgqfjjmfijqzr.supabase.co"
+  const DB_KEY = process.env.REACT_APP_DB_AP_KEY || ""
+  const DB_URL = process.env.REACT_APP_DB_AP_URL || ""
 
   const supabase = createClient(DB_URL, DB_KEY)
   const resultTot = await supabase.from('Examples').select()
