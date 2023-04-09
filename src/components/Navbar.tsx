@@ -22,7 +22,7 @@ export default function Navbar() {
               <NavbarItem textItem="Acerca de mi" toLink="/" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
             </span>
             <span onClick={() => setactiveItem(2)} className={`mt-1 ${activeItem === 2 ? "active" : ""}`}>
-              <NavbarItem textItem="Tecnologias" toLink="/technologies" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
+              <NavbarItem textItem="Tecnologías" toLink="/technologies" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
             </span>
             <span onClick={() => setactiveItem(3)} className={`mt-1 ${activeItem === 3 ? "active" : ""}`}>
               <NavbarItem textItem="Proyectos" toLink="/projects" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
