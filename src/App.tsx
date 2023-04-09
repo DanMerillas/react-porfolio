@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Certifications from "./components/Certifications";
-import yo from './yo.png'
+import yo from './images/yo.png'
 
 
 import './App.css';
