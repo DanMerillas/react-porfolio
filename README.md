@@ -2,7 +2,7 @@
 
 Este proyecto utiliza **react js**, **react-router**, **supabase** y **tailwind** como framework de css. Además utiliza **co-founder** para simular un chatbot que se basa en categorizar los inputs y con eso realizar las respuestas.
 
-Este porfolio se ha creado para como ejercicio para aprender distintas tecnologías y no pretende ser perfecto ni con un diseño rompedor.
+Este porfolio se ha creado como ejercicio para aprender distintas tecnologías y no pretende ser perfecto ni con un diseño rompedor.
 
 Las secciones de las que consta son:
 
