@@ -33,7 +33,7 @@ export default function Navbar() {
   return (
     <header className="bg-gray-800 md:sticky top-0 z-10">
      
-        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row">
 
 
           <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 flex flex-wrap items-center text-base">
