@@ -47,6 +47,21 @@ export const testimonials = [{
 
 export const projectsList = [
   {
+    client: 'Adime',
+    title: 'Adime',
+    position: 'Arquitecto',
+    text: 'Migracioón de herramienta de envio masivo de correos a SharePoint online con spfx',
+    date: '2023 - Actualidad',
+    category: {
+      tag: 'INDRA',
+      color: '#018f69'
+    },
+    link: {
+      url: 'https://adime.org/',
+      text: 'Ver cliente'
+    }
+  },
+  {
     client: 'MasMovil',
     title: 'MasGestDoc',
     position: 'Arquitecto',

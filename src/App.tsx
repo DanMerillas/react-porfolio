@@ -24,10 +24,10 @@ function App() {
 
       <div className="container mx-auto flex md:flex-row flex-col">
         <div className="flex">
-          <div className="rounded flex pr-9 h-full">
+          <div className="rounded flex sblock m-6">
             <img alt='Daniel Merillas' src={yo} className={'imgYo'} />
           </div>
-          <div className="rounded flex pl-9 h-full items-center tituloPag">
+          <div className="rounded flex h-full items-center tituloPag">
             <label className='title-font sm:text-4xl text-3xl mt-4 text-white' title='Daniel Merillas'><strong>Daniel Merillas Gonzalo</strong></label>
           </div>
 

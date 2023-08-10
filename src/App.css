@@ -17,6 +17,10 @@ border-radius: 5px;
   color: #61dafb;
 }
 
+li{
+  height: 10;
+}
+
 .typed-out{
   overflow: hidden;
   border-right: .30em solid rgb(255 255 255 );
