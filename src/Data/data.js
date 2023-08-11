@@ -4,6 +4,12 @@ import c from '../../src/images/csharp.png'
 import onpremise from '../../src/images/SPOnPremise.png'
 import online from '../../src/images/Sharepoint_online.png'
 import powershell from '../../src/images/pnp.png'
+import series from '../../src/images/Buscador series.png'
+import precios from '../../src/images/Comparador de precios.png'
+import pokedex from '../../src/images/Pokedex.png'
+import pokecards from '../../src/images/PokemonCards.png'
+import portfolio from '../../src/images/porfolio.png'
+import weather from '../../src/images/weather.png'
 
 export const TechnologiesList = [{
     title: "c#",
@@ -684,16 +690,47 @@ export const projectsList = [
     }
   },
 ];
-export const porfolioData = [{
+export const porfolioData = [
+  {
+    title: 'Aplicación del tiempo',
+    url: 'https://danmerillas.github.io/weather-app/',
+    description: 'Aplicación del tiempo con la api de openweathermap.org, busca el tiempo de cualquier ciudad del mundo, muestra el tiempo actual y el de los próximos 5 días',
+    image: weather,
+    tags: ['React', 'API', 'Geolocalización'],
+  }, 
+  {
   title: 'Porfolio profesional',
   url: 'https://daniel-merillas.netlify.app/',
   description: 'Web con mis datos personales y profesionales',
-  image: foto1,
-  tags: ['React', 'Tailwind', 'Chatbot', 'Supabase'],
-}, {
+  image: portfolio,
+  tags: ['React', 'Tailwind', 'Chatbot', 'Supabase', 'Router'],
+}, 
+{
   title: 'Pokedex de Aarón',
-  url: 'https://pokedex-aaron.vercel.app/',
-  image: foto2,
+  url: 'https://aaron-pokemons.netlify.app/',
+  image: pokedex,
+  description: 'Muestra en formato carta, pokemons de manera aleatoria usando la pokeapi https://pokeapi.co/, tiene un buscador para encontrar el pokemon que quieras y un apartados de favoritos. Usa supabase para almacenar los favoritos',
+  tags: ['React', 'Supabase', 'API'],
+},
+{
+  title: 'Cartas pokemon',
+  url: 'https://danmerillas.github.io/PokemonCards/',
+  image: pokecards,
   description: 'Muestra en formato carta pokemons de manera aleatoria usando la pokeapi https://pokeapi.co/, tiene un buscador para encontrar el pokemon que quieras y un apartados de favoritos. Usa supabase para almacenar los favoritos',
   tags: ['React', 'Supabase', 'API'],
-}];
+},
+{
+  title: 'Comparador de precios',
+  url: 'https://comparadorprecios.netlify.app',
+  image: precios,
+  description: 'Permite almacenar el precio de productos de diferentes supermercados y compararlos, tiene un buscador para encontrar el producto que quieras. Usa supabase para almacenar los precios, productos y supermercados',
+  tags: ['React', 'Supabase', 'Material UI', 'ReactDatatable'],
+},
+{
+  title: 'Buscador de peliculas y series',
+  url: 'https://netflixdani-jesi.netlify.app',
+  image: series,
+  description: 'Muestra en formato carta pokemons de manera aleatoria usando la pokeapi https://pokeapi.co/, tiene un buscador para encontrar el pokemon que quieras y un apartados de favoritos. Usa supabase para almacenar los favoritos',
+  tags: ['React', 'Supabase', 'API'],
+},
+];

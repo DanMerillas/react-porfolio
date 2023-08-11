@@ -1,10 +1,9 @@
-import foto from './../images/Sharepoint_online.png'
 import { porfolioData } from "../Data/data";
 
 export default function ProjectsPorfolio() {
     return (
         <section id="ProjectsPorfolio" className="relative">
-            <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
+            <div className="container py-6 mx-auto flex sm:flex-nowrap flex-wrap">
                 <div className="text-center mb-10">
 
                     <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
@@ -21,10 +20,19 @@ export default function ProjectsPorfolio() {
                     
                 { porfolioData.map((porfolio) => (
                         <div>
-                            <a href={porfolio.url} title={porfolio.title} target='_blank' rel="noreferrer"><p className="title-font font-medium text-white ">{porfolio.title}</p></a>
-                            <p className="leading-relaxed m-5 text-justify sm:h-32">{porfolio.description}</p>
-                            <p className="title-font font-small text-white ">{porfolio.tags}</p>
-                            <img src={porfolio.image} alt="SharePoint" className="w-50 h-50 inline-flex items-center justify-center" />
+                            <a href={porfolio.url} title={porfolio.title} target='_blank' rel="noreferrer">
+                                <p className="title-font font-medium text-white mb-3">{porfolio.title}</p>
+                            <img  src={porfolio.image} alt="SharePoint" className="inline-flex items-center justify-center w-80 h-52 object-cover" />
+                            
+                            <p className="leading-relaxed m-5 text-justify sm:h-36">{porfolio.description}</p>
+                            </a>
+                            <div className="flex flex-wrap gap-2 h-16 m-5">
+                            {porfolio.tags.map((tag) => (
+                                <p className="bg-blue-500 text-white py-1 px-2 rounded-lg m-1 text-xs h-7">#{tag}</p>
+                            ))}
+                            </div>
+                            
+                            
                         </div>
                     ))
                 }
