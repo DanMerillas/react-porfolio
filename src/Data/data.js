@@ -684,3 +684,16 @@ export const projectsList = [
     }
   },
 ];
+export const porfolioData = [{
+  title: 'Porfolio profesional',
+  url: 'https://daniel-merillas.netlify.app/',
+  description: 'Web con mis datos personales y profesionales',
+  image: foto1,
+  tags: ['React', 'Tailwind', 'Chatbot', 'Supabase'],
+}, {
+  title: 'Pokedex de Aarón',
+  url: 'https://pokedex-aaron.vercel.app/',
+  image: foto2,
+  description: 'Muestra en formato carta pokemons de manera aleatoria usando la pokeapi https://pokeapi.co/, tiene un buscador para encontrar el pokemon que quieras y un apartados de favoritos. Usa supabase para almacenar los favoritos',
+  tags: ['React', 'Supabase', 'API'],
+}];

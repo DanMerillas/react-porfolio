@@ -72,16 +72,16 @@ export default function Navbar() {
               </li>
               <li>
                 <span onClick={() => clickItem(6)} className={`mt-1 ${activeItem === 6 ? "active" : ""}`}>
-                  <NavbarItem textItem="Proyectos personales" toLink="/chat" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
-                </span>
-              </li>
-              <li>
-                <span onClick={() => clickItem(6)} className={`mt-1 ${activeItem === 6 ? "active" : ""}`}>
-                  <NavbarItem textItem="Chat (Beta)" toLink="/chat" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
+                  <NavbarItem textItem="Proyectos personales" toLink="/porfolio" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
                 </span>
               </li>
               <li>
                 <span onClick={() => clickItem(7)} className={`mt-1 ${activeItem === 7 ? "active" : ""}`}>
+                  <NavbarItem textItem="Chat (Beta)" toLink="/chat" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
+                </span>
+              </li>
+              <li>
+                <span onClick={() => clickItem(8)} className={`mt-1 ${activeItem === 8 ? "active" : ""}`}>
                   <NavbarItem textItem="Contacto!" toLink="/contact" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
                 </span>
               </li>
