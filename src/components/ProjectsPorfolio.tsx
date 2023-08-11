@@ -15,7 +15,7 @@ export default function ProjectsPorfolio() {
                 </div>
 
             </div>
-            <div className="grid sm:grid-cols-3 grid-cols-1 gap-9 text-center">
+            <div className="container mx-auto grid sm:grid-cols-3 grid-cols-1 gap-9 text-center">
                 
                     
                 { porfolioData.map((porfolio) => (
