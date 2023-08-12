@@ -21,8 +21,8 @@ export default function ProjectsPorfolio() {
                 { porfolioData.map((porfolio) => (
                         <div>
                             <a href={porfolio.url} title={porfolio.title} target='_blank' rel="noreferrer">
-                                <h1 className="title-font font-bold text-white mb-3">{porfolio.title}</h1>
-                            <img  src={porfolio.image} alt="SharePoint" className="inline-flex items-center justify-center w-80 h-52 object-cover" />
+                                <h1 className="title-font text-3xl mt-4 text-white mb-5">{porfolio.title}</h1>
+                            <img  src={porfolio.image} alt="SharePoint" className="inline-flex items-center justify-center w-80 h-52 object-cover hover:scale-110" />
                             
                             <p className="leading-relaxed m-5 text-justify sm:h-36">{porfolio.description}</p>
                             </a>

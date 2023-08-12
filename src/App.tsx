@@ -21,7 +21,7 @@ function App() {
 
 
   return (
-    <main className="text-gray-400 bg-gray-900 body-font">
+    <main className="text-gray-400 bg-gray-900 body-font h-screen">
 
       <div className="container mx-auto flex md:flex-row flex-col">
         <div className="flex">

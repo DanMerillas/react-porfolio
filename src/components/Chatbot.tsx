@@ -80,7 +80,7 @@ export default function Chatbot() {
 
 
   return (
-    <main>
+    <section>
       <h1 className="title-font sm:text-4xl text-3xl mt-4 text-white text-center mb-4">Pregunta a mi chatbot</h1>
       <div className="flex flex-col gap-4 m-auto max-w-lg border border-gray-400 p-4 rounded-md">
         <div className="flex flex-col grap-4 h-[350px] overflow-y-auto" ref={container}>
@@ -101,6 +101,6 @@ export default function Chatbot() {
 
         </form>
       </div>
-    </main>
+    </section>
   );
 }
