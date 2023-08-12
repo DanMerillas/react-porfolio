@@ -19,7 +19,7 @@ export default function ProjectsPorfolio() {
                 
                     
                 { porfolioData.map((porfolio) => (
-                        <div>
+                        <div key={porfolio.title}>
                             <a href={porfolio.url} title={porfolio.title} target='_blank' rel="noreferrer">
                                 <h1 className="title-font text-3xl mt-4 text-white mb-5">{porfolio.title}</h1>
                             <img  src={porfolio.image} alt="SharePoint" className="inline-flex items-center justify-center w-80 h-52 object-cover hover:scale-110" />
@@ -28,7 +28,7 @@ export default function ProjectsPorfolio() {
                             </a>
                             <div className="flex flex-wrap gap-2 h-16 m-5">
                             {porfolio.tags.map((tag) => (
-                                <p className="bg-blue-500 text-white py-1 px-2 rounded-lg m-1 text-xs h-7">#{tag}</p>
+                                <p className="bg-blue-500 text-white py-1 px-2 rounded-lg m-1 text-l h-7">#{tag}</p>
                             ))}
                             </div>
                             

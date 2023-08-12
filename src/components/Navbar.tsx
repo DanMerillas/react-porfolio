@@ -44,43 +44,43 @@ export default function Navbar() {
                 >&times;</span>
               </li>
 
-              <li>
+              <li className='mt-4 md:mt-0 text-lg md:text-base'>
                 <span onClick={() => clickItem(1)} className={`mt-1 ${activeItem === 1 ? "active" : ""}`}>
                   <NavbarItem textItem="Acerca de mi" toLink="/" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
                 </span>
               </li>
-              <li>
+              <li className='mt-4 md:mt-0 text-lg md:text-base'>
                 <span onClick={() => clickItem(2)} className={`mt-1 ${activeItem === 2 ? "active" : ""}`}>
                   <NavbarItem textItem="Tecnologías" toLink="/technologies" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
                 </span>
               </li>
-              <li>
+              <li className='mt-4 md:mt-0 text-lg md:text-base'>
                 <span onClick={() => clickItem(3)} className={`mt-1 ${activeItem === 3 ? "active" : ""}`}>
                   <NavbarItem textItem="Proyectos" toLink="/projects" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
                 </span>
               </li>
 
-              <li>
+              <li className='mt-4 md:mt-0 text-lg md:text-base'>
                 <span onClick={() => clickItem(4)} className={`mt-1 ${activeItem === 4 ? "active" : ""}`}>
                   <NavbarItem textItem="Habilidades" toLink="/skills" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
                 </span>
               </li>
-              <li>
+              <li className='mt-4 md:mt-0 text-lg md:text-base'>
                 <span onClick={() => clickItem(5)} className={`mt-1 ${activeItem === 5 ? "active" : ""}`}>
                   <NavbarItem textItem="Certificaciones" toLink="/certifications" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
                 </span>
               </li>
-              <li>
+              <li className='mt-4 md:mt-0 text-lg md:text-base'>
                 <span onClick={() => clickItem(6)} className={`mt-1 ${activeItem === 6 ? "active" : ""}`}>
                   <NavbarItem textItem="Proyectos personales" toLink="/porfolio" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
                 </span>
               </li>
-              <li>
+              <li className='mt-4 md:mt-0 text-lg md:text-base'>
                 <span onClick={() => clickItem(7)} className={`mt-1 ${activeItem === 7 ? "active" : ""}`}>
                   <NavbarItem textItem="Chat (Beta)" toLink="/chat" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
                 </span>
               </li>
-              <li>
+              <li className='mt-4 md:mt-0 text-lg md:text-base'>
                 <span onClick={() => clickItem(8)} className={`mt-1 ${activeItem === 8 ? "active" : ""}`}>
                   <NavbarItem textItem="Contacto!" toLink="/contact" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
                 </span>
