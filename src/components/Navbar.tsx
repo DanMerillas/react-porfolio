@@ -82,7 +82,7 @@ export default function Navbar() {
               </li>
               <li className='mt-4 md:mt-0 text-lg md:text-base'>
                 <span onClick={() => clickItem(8)} className={`mt-1 ${activeItem === 8 ? "active" : ""}`}>
-                  <NavbarItem textItem="Contacto!" toLink="/contact" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
+                  <NavbarItem textItem="Contacto" toLink="/contact" itemClassName="mr-5 bg-gray-800 border-0 py-1 px-1 focus:outline-none hover:bg-gray-700 rounded" />
                 </span>
               </li>
             </ul>

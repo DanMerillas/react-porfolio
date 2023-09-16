@@ -1,6 +1,12 @@
+import { SendMailForm } from "./sendMailForm";
 
 
 export default function Contact() {
+
+    const publicKey = process.env.REACT_APP_EMAIL_PUBLIC_KEY || '';
+    const serviceID = process.env.REACT_APP_EMAIL_SERVICE_ID || '';
+    const templateID = process.env.REACT_APP_EMAIL_TEMPLATE_ID || '';
+
     return (
         <section id="contact" className="relative">
             <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
@@ -50,20 +56,18 @@ export default function Contact() {
                     <p className="leading-relaxed mb-5">
                         Si te interesa mi trabajo o piensas que puedo ayudarte a mejorar en algunas de las tecnologías que utilizo, no te cortes!! Escríbeme y será un placer intentar ayudarte!!
                     </p>
-                    <div className="relative mb-4">
-
-                    </div>
+                  
                     <p className="leading-relaxed mb-7">
                         Siempre estoy dispuesto a ayudar a un compañero o incluso en aprender algo nuevo.
                     </p>
                     <div className="relative mb-4">
-
+                        <SendMailForm publicKey={publicKey} serviceID={serviceID} templateID={templateID} />
                     </div>
 
                 </div>
             </div>
 
-            
+
         </section>
     );
 }
