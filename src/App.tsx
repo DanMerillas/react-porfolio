@@ -26,6 +26,8 @@ function App() {
       <Helmet>
         <title>Daniel Merillas</title>
         <meta name='description' content='Porfolio de Daniel Merillas' />
+        <meta name="keywords" content="Merillas, react, sharepoint, office 365"
+        />
       </Helmet>
 
       <main className="text-gray-400 bg-gray-900 body-font h-screen">
