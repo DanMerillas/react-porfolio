@@ -25,7 +25,7 @@ function App() {
     <HelmetProvider>
       <Helmet>
         <title>Daniel Merillas</title>
-        <meta name='description' content='Porfolio de Daniel Merillas' />
+        <meta name='description' content='Portfolio de Daniel Merillas' />
         <meta name="keywords" content="Merillas, react, sharepoint, office 365"
         />
       </Helmet>
@@ -52,7 +52,7 @@ function App() {
               <Route key={'projects'} path="/projects" element={<ProjectsTimeline />}></Route>
               <Route key={'skills'} path="/skills" element={<Skills />} />
               <Route key={'certifications'} path="/certifications" element={<Certifications />} />
-              <Route key={'contact'} path="/porfolio" element={<ProjectsPorfolio />} />
+              <Route key={'contact'} path="/portfolio" element={<ProjectsPorfolio />} />
               <Route key={'contact'} path="/contact" element={<Contact />} />
               <Route key={'chat'} path="/chat" element={<Chatbot />} />
             </Route>

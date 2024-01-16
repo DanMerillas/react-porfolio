@@ -699,7 +699,7 @@ export const porfolioData = [
     tags: ['React', 'API', 'Geolocalización', 'Github Pages'],
   }, 
   {
-  title: 'Porfolio profesional',
+  title: 'Portfolio profesional',
   url: 'https://daniel-merillas.netlify.app/',
   description: 'Web con mis datos personales y profesionales. Muestra mis proyectos y mis habilidades. Usa un chatbot para contactar conmigo y saber algo mas de mi.',
   image: portfolio,
